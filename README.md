@@ -7,7 +7,7 @@
 
 **BWifiKill** es una potente suite de auditoría de redes inalámbricas y radiofrecuencia (2.4GHz) desarrollada para el **ESP32 DevKit v1**. Esta herramienta permite realizar desde análisis de espectro pasivo hasta pruebas de penetración activa y denegación de servicio (Jamming).
 <p align="center">
-  <img src="assets/1.jpg" width="60%" alt="1">
+  <img src="img/1.jpg" width="60%" alt="1">
 </p>
 
 ---
@@ -150,7 +150,7 @@ Al seleccionar una IP en el **IP Scanner**, puedes ejecutar:
 | **Jammer 2** | **GPIO 16 (RX2)** | GPIO 4 | 18 / 19 / 23 |
 
 <p align="center">
-  <img src="assets/Pines_NRF24.png" width="60%" alt="Diagrama NRF24">
+  <img src="img/Pines_NRF24.png" width="60%" alt="Diagrama NRF24">
 </p>
 
 
@@ -165,11 +165,11 @@ Al seleccionar una IP en el **IP Scanner**, puedes ejecutar:
 | **Botón CLON** | GPIO 27 | Función Especial |
 
 <p align="center">
-  <img src="assets/conexiones_ESP32.png" width="45%" alt="Conexiones Generales">
+  <img src="img/conexiones_ESP32.png" width="45%" alt="Conexiones Generales">
 </p>
 
 <p align="center">
-  <img src="assets/Pines_pantalla.png" width="45%" alt="Pines Pantalla">
+  <img src="img/Pines_pantalla.png" width="45%" alt="Pines Pantalla">
 </p>
 
 ---
@@ -217,5 +217,3 @@ Desarrollado por **PepeAngell**.
 * **Tutorial Base:** [FR4NK SOLO](https://www.youtube.com/@FR4NKSOLO)
 * **Firmware Inspiración:** [Bruce Firmware](https://github.com/pr3y/Bruce)
 
-
-![Texto alternativo](assets/1.jpg)
