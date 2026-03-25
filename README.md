@@ -193,7 +193,7 @@ Elige el método que prefieras: el **Instalador Web** (más rápido) o la **Comp
 
 ### 🌐 Método 1: Web Installer (Recomendado)
 Puedes flashear el firmware directamente desde tu navegador sin instalar nada en tu PC.
-1. Entra al instalador oficial: [**BWifiKill Web Flasher**](https://pepeangell.github.io/BWifiKill-ESP32/)
+1. Entra al instalador oficial: [**BWifiKill Web Flasher**](https://pepeangell5.github.io/BWifiKill-ESP32/)
 2. Conecta tu **ESP32** al puerto USB (Usa Google Chrome o MS Edge).
 3. Presiona el botón **⚡ INICIAR FLASH ⚡**.
 4. **IMPORTANTE:** Si el proceso no inicia o marca error de puerto, mantén presionado el botón **BOOT** en tu placa al momento de conectar o iniciar el flasheo.
@@ -202,7 +202,7 @@ Puedes flashear el firmware directamente desde tu navegador sin instalar nada en
 Si deseas modificar el código o contribuir al desarrollo:
 1.  **Clona el repositorio:**
     ```bash
-    git clone [https://github.com/PepeAngell/BWifiKill-ESP32.git](https://github.com/PepeAngell/BWifiKill-ESP32.git)
+    git clone [https://github.com/PepeAngell5/BWifiKill-ESP32.git](https://github.com/PepeAngell/BWifiKill-ESP32.git)
     ```
 2.  Abre la carpeta en **VS Code** con la extensión **PlatformIO** instalada.
 3.  El archivo `platformio.ini` descargará automáticamente las dependencias: `U8g2`, `RF24`, `ESP32Ping`, `AsyncUDP` y `BleKeyboard`.
