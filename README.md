@@ -26,97 +26,97 @@ Antes de flashear, asegúrate de cumplir con lo siguiente para evitar errores de
 
 1.  📡 **WIFI SCANNER:** Escaneo detallado de redes (SSID, RSSI, Canal) con función de **Clonación**.
 <p align="center">
-  <img src="assets/2.jpg" width="60%" alt="2">
+  <img src="img/2.jpg" width="60%" alt="2">
 </p>
 
 2.  📊 **ANALIZADOR:** Escáner de espectro en tiempo real para visualizar la actividad en 2.4GHz. **Incluye alertas visuales de ataque.**
 <p align="center">
-  <img src="assets/3.jpg" width="60%" alt="3">
+  <img src="img/3.jpg" width="60%" alt="3">
 </p>
 
 3.  🔍 **BT SCANNER:** Rastreador de dispositivos Bluetooth Classic y BLE.
 <p align="center">
-  <img src="assets/4.jpg" width="60%" alt="4">
+  <img src="img/4.jpg" width="60%" alt="4">
 </p>
 
 4.  📈 **PACKET MONITOR:** Monitor gráfico de tráfico WiFi y flujo de paquetes en tiempo real.
 <p align="center">
-  <img src="assets/5.jpg" width="60%" alt="5">
+  <img src="img/5.jpg" width="60%" alt="5">
 </p>
 
 5.  🛡️ **MODO CENTINELA:** Sistema de vigilancia activa que detecta ataques de desautenticación y Jammers RF en tiempo real.
 <p align="center">
-  <img src="assets/6.jpg" width="60%" alt="6">
+  <img src="img/6.jpg" width="60%" alt="6">
 </p>
 
 6.  🚫 **JAMMER CANAL:** Bloqueo de WiFi en un canal específico (Requiere NRF24L01).
 <p align="center">
-  <img src="assets/7.jpg" width="60%" alt="7">
+  <img src="img/7.jpg" width="60%" alt="7">
 </p>
 
 7.  🌊 **BARRIDO TOTAL:** Interferencia agresiva recorriendo todos los canales del espectro.
 <p align="center">
-  <img src="assets/8.jpg" width="60%" alt="8">
+  <img src="img/8.jpg" width="60%" alt="8">
 </p>
 
 8.  📵 **BT JAMMER:** Interferencia dirigida a las frecuencias de salto (hopping) de Bluetooth.
 <p align="center">
-  <img src="assets/9.jpg" width="60%" alt="9">
+  <img src="img/9.jpg" width="60%" alt="9">
 </p>
 
 9.  📣 **BEACON SPAM:** Inunda el entorno con cientos de redes WiFi falsas personalizables.
 <p align="center">
-  <img src="assets/10.jpg" width="60%" alt="10">
+  <img src="img/10.jpg" width="60%" alt="10">
 </p>
 
 10. 📱 **BLE SPAM (POP):** Envía notificaciones emergentes de emparejamiento a dispositivos iOS y Android cercanos.
 <p align="center">
-  <img src="assets/11.jpg" width="60%" alt="11">
+  <img src="img/11.jpg" width="60%" alt="11">
 </p>
 
 11. 🔄 **MODO HÍBRIDO:** Ataque combinado de desautenticación WiFi + interferencia de hardware (RF).
 <p align="center">
-  <img src="assets/12.jpg" width="60%" alt="12">
+  <img src="img/12.jpg" width="60%" alt="12">
 </p>
 
 12. 🎭 **EVIL PORTAL:** Creación de APs falsos con Portales Cautivos para pruebas de Phishing.
 <p align="center">
-  <img src="assets/13.jpg" width="60%" alt="13">
+  <img src="img/13.jpg" width="60%" alt="13">
 </p>
 
 13. 🎯 **IP SCANNER PRO:** Centro de comando local con **Ping, UDP Flood y Port Scan**.
 <p align="center">
-  <img src="assets/14.jpg" width="60%" alt="14">
+  <img src="img/14.jpg" width="60%" alt="14">
 </p>
 
 14. 🛰️ **CONTROL ESCLAVO:** Módulo para comandar otras unidades BWifiKill de forma remota.
 <p align="center">
-  <img src="assets/15.jpg" width="60%" alt="15">
+  <img src="img/15.jpg" width="60%" alt="15">
 </p>
 
 15. 🌐 **WEB DASHBOARD:** Servidor local para gestionar y descargar logs desde tu celular.
 <p align="center">
-  <img src="assets/16.jpg" width="60%" alt="16">
+  <img src="img/16.jpg" width="60%" alt="16">
 </p>
 
 16. 🎮 **BT REMOTE:** Control remoto Bluetooth para interactuar con dispositivos emparejados.
 <p align="center">
-  <img src="assets/17.jpg" width="60%" alt="17">
+  <img src="img/17.jpg" width="60%" alt="17">
 </p>
 
 17. 📂 **LEER LOGS:** Visor interno para revisar credenciales capturadas (User:Pass).
 <p align="center">
-  <img src="assets/18.jpg" width="60%" alt="18">
+  <img src="img/18.jpg" width="60%" alt="18">
 </p>
 
 18. 🕹️ **ARCADE MODE:** Submenú de entretenimiento con 5 minijuegos clásicos (Snake, Pong, Flappy, Invaders y Dino Run).
 <p align="center">
-  <img src="assets/19.jpg" width="60%" alt="19">
+  <img src="img/19.jpg" width="60%" alt="19">
 </p>
 
 19. ℹ️ **ABOUT:** Versión v3.3 con fondo animado Matrix y scroll de créditos del firmware.
 <p align="center">
-  <img src="assets/20.jpg" width="60%" alt="20">
+  <img src="img/20.jpg" width="60%" alt="20">
 </p>
 
 ---
