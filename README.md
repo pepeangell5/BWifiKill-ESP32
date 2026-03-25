@@ -202,7 +202,7 @@ Puedes flashear el firmware directamente desde tu navegador sin instalar nada en
 Si deseas modificar el código o contribuir al desarrollo:
 1.  **Clona el repositorio:**
     ```bash
-    git clone [https://github.com/PepeAngell5/BWifiKill-ESP32.git](https://github.com/PepeAngell/BWifiKill-ESP32.git)
+    git clone [https://github.com/PepeAngell5/BWifiKill-ESP32.git](https://github.com/PepeAngell5/BWifiKill-ESP32.git)
     ```
 2.  Abre la carpeta en **VS Code** con la extensión **PlatformIO** instalada.
 3.  El archivo `platformio.ini` descargará automáticamente las dependencias: `U8g2`, `RF24`, `ESP32Ping`, `AsyncUDP` y `BleKeyboard`.
