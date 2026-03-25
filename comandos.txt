@@ -1,0 +1,7 @@
+git status
+
+git add .
+
+git commit -m "lo que hiciste"
+
+git push

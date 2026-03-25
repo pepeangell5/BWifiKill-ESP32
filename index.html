@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BWIFIKILL v3.3 | WEB INSTALLER</title>
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+    <style>
+        :root { --glow: #00ff00; --bg: #000; }
+        body { background: var(--bg); color: var(--glow); font-family: 'Courier New', monospace; margin: 0; overflow: hidden; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        canvas { position: absolute; top: 0; left: 0; z-index: 1; opacity: 0.4; }
+        .container { z-index: 10; text-align: center; border: 1px solid var(--glow); padding: 40px; background: rgba(0, 10, 0, 0.9); box-shadow: 0 0 30px rgba(0, 255, 0, 0.3); max-width: 500px; width: 90%; }
+        h1 { font-size: 2.5em; letter-spacing: 5px; margin: 0; text-shadow: 0 0 10px var(--glow); }
+        .warning { font-size: 0.8em; border: 1px dashed var(--glow); padding: 15px; margin: 25px 0; text-align: left; line-height: 1.4; }
+        button[slot="activate"] { background: var(--glow); color: #000; border: none; padding: 20px; font-weight: bold; font-size: 1.4em; cursor: pointer; width: 100%; transition: 0.3s; letter-spacing: 2px; }
+        button[slot="activate"]:hover { background: #fff; box-shadow: 0 0 30px var(--glow); }
+        .credits { font-size: 0.8em; margin-top: 25px; opacity: 0.7; color: #fff; text-shadow: 0 0 5px var(--glow); }
+        .credits a { color: var(--glow); text-decoration: none; font-weight: bold; }
+        .credits a:hover { color: #fff; text-decoration: underline; }
+        .instagram-link { display: flex; align-items: center; justify-content: center; margin-top: 10px; font-size: 0.9em;}
+        .instagram-icon { width: 16px; height: 16px; margin-right: 5px; fill: var(--glow); }
+    </style>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="container">
+        <h1 style="font-size: 1em; background: var(--glow); color: #000; display: inline-block; padding: 0 10px;">TERMINAL v3.3</h1>
+        <h1>BWIFIKILL</h1>
+        <div class="warning">
+            [!] CONECTA EL ESP32 VÍA USB<br>
+            [!] CIERRA VS CODE / MONITOR SERIE<br>
+            [!] SI EL FLASH FALLA: MANTÉN BOTÓN <b>BOOT</b>
+        </div>
+        <esp-web-install-button manifest="manifest.json">
+            <button slot="activate">⚡ INSTALAR AHORA ⚡</button>
+        </esp-web-install-button>
+        <div class="credits">
+            DEV: <a href="https://www.instagram.com/pepeangell" target="_blank">pepeangell</a>
+        </div>
+        <div class="instagram-link">
+            <svg class="instagram-icon" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.919-.058-1.265-.069-1.646-.069-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.058-1.69-.072-4.949-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <a href="https://www.instagram.com/pepeangelll" target="_blank">Instagram</a>
+        </div>
+        <p style="font-size: 0.7em; margin-top: 15px; opacity: 0.5; color: #fff;">AUDITORÍA RF</p>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        const chars = "0123456789ABCDEF";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array(Math.floor(columns)).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#0f0";
+            ctx.font = fontSize + "px monospace";
+            for (let i = 0; i < drops.length; i++) {
+                const text = chars.charAt(Math.floor(Math.random() * chars.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                drops[i]++;
+            }
+        }
+        setInterval(draw, 40);
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
