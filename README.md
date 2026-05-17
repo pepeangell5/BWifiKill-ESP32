@@ -95,6 +95,7 @@ Antes de flashear, asegúrate de cumplir con lo siguiente para evitar errores de
 </p>
 
 15. 🌐 **WEB DASHBOARD:** Servidor local para gestionar y descargar logs desde tu celular.
+    Password: admin1234
 <p align="center">
   <img src="img/16.jpg" width="60%" alt="16">
 </p>
@@ -182,7 +183,7 @@ El **Modo Centinela** analiza el tráfico de gestión WiFi para detectar patrone
 ### Evil Portal & Web Dashboard
 Para capturar datos con el **Evil Portal**, el ESP32 genera una red abierta. Una vez que una víctima ingresa sus datos, estos se guardan en la memoria interna (SPIFFS/LittleFS).
 1.  Entra a **Web Dashboard** en el menú principal.
-2.  Conecta tu celular a la red WiFi que indica la pantalla.
+2.  Conecta tu celular a la red WiFi que indica la pantalla, Password: admin1234
 3.  Accede a la IP mostrada en el navegador para ver, descargar o borrar los logs de capturas.
 
 --------------------------------------------------------------
